@@ -6,7 +6,7 @@
 module.exports = app => {
   const {
     router,
-    controller
+    controller,
   } = app;
   router.get('/', controller.home.index);
   router.post('/api/msg_board/list', controller.msgBoard.getMsgBoardList);

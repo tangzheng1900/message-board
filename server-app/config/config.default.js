@@ -11,6 +11,13 @@ module.exports = appInfo => {
    * @type {Egg.EggAppConfig}
    **/
   const config = exports = {};
+  config.cluster = {
+    listen: {
+      path: '',
+      port: 35651,
+      hostname: '0.0.0.0',
+    },
+  };
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1557201798621_3561';
@@ -37,9 +44,9 @@ module.exports = appInfo => {
         // 端口号
         port: '3306',
         // 用户名
-        user: 'zengjielin',
+        user: 'root',
         // 密码
-        password: '123',
+        password: 'zaq1@WSX',
         // 数据库名
         database: 'msgboard',
       },
