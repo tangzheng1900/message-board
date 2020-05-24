@@ -15,4 +15,6 @@ module.exports = app => {
   router.post('/api/msg_board/delete', controller.msgBoard.deleteMsgBoard);
   router.post('/api/customer/list', controller.customer.getRecommendList);
   router.post('/api/customer/add', controller.customer.addRecommend);
+  router.post('/api/sale/list', controller.sale.getSaleList);
+  router.post('/api/sale/add', controller.sale.addSale);
 };
