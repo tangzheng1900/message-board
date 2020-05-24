@@ -13,4 +13,6 @@ module.exports = app => {
   router.post('/api/msg_board/add', controller.msgBoard.addMsgBoard);
   router.post('/api/msg_board/modify', controller.msgBoard.moidfyMsgBoard);
   router.post('/api/msg_board/delete', controller.msgBoard.deleteMsgBoard);
+  router.post('/api/customer/list', controller.customer.getRecommendList);
+  router.post('/api/customer/add', controller.customer.addRecommend);
 };
