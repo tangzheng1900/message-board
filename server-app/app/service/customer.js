@@ -24,12 +24,12 @@ class customerService extends Service {
     if (res.affectedRows === 1) {
       return {
         code: 0,
-        msg: '留言成功'
+        msg: '保存成功'
       };
     } else {
       return {
         code: -1,
-        msg: '留言失败'
+        msg: '保存失败'
       };
     }
   }
