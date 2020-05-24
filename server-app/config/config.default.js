@@ -32,7 +32,11 @@ module.exports = appInfo => {
       enable: false,
       // headerName: 'x-csrf-token', // 通过 header 传递 CSRF token 的默认字段为 x-csrf-token
     }
-  }
+  };
+  config.cors = {
+    origin: '*',
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
+  };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
@@ -40,7 +44,7 @@ module.exports = appInfo => {
       // 单数据库信息配置
       client: {
         // host
-        host: 'localhost',
+        host: '127.0.0.1',
         // 端口号
         port: '3306',
         // 用户名
