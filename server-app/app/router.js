@@ -18,4 +18,5 @@ module.exports = app => {
   router.post('/api/sale/list', controller.sale.getSaleList);
   router.post('/api/sale/add', controller.sale.addSale);
   router.post('/api/message/push', controller.message.pushMessage);
+  router.post('/api/message/wxuser', controller.message.wxUser);
 };
