@@ -17,4 +17,5 @@ module.exports = app => {
   router.post('/api/customer/add', controller.customer.addRecommend);
   router.post('/api/sale/list', controller.sale.getSaleList);
   router.post('/api/sale/add', controller.sale.addSale);
+  router.post('/api/message/push', controller.message.pushMessage);
 };
